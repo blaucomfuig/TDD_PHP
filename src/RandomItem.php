@@ -3,10 +3,6 @@
 namespace App;
 
 class RandomItem {
-    public $array = array(array("name" => "Andrea",
-    "id" => 0), array("name" => "Joan",
-    "id" => 1), array("name" => "Berta",
-    "id" => 2));
 
 
     public function execute ($array)
