@@ -21,8 +21,8 @@ class RandomItemTest extends TestCase {
 		
 		$random = new RandomItem();
 
-		$result_1 = $random -> execute($lista);
-		$result_2 = $random -> execute($lista);
+		$result_1 = $random -> chooseCoder($lista);
+		$result_2 = $random -> chooseCoder($lista);
 
 		$this -> assertEquals("true", $result_1);
 		$this -> assertEquals("true", $result_2);

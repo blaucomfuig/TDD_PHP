@@ -5,7 +5,7 @@ namespace App;
 class RandomItem {
 
 
-    public function execute ($array)
+    public function chooseCoder ($array)
     {
         $random = rand(0, 2);
         $randomId = $array[$random]['id'];
