@@ -4,6 +4,7 @@ namespace Tests;
 
 
 use App\RandomItem;
+use App\Person;
 use  PHPUnit\Framework\TestCase;
 
 
@@ -25,6 +26,16 @@ class RandomItemTest extends TestCase {
 
 		$this -> assertEquals("true", $result_1);
 		$this -> assertEquals("true", $result_2);
+	}
+
+	public function testWhenAgressorAttacksVictimSheLoses5OfHealth(
+	) {
+		$agressor = new Person();
+		$victim = new Person();
+
+		$health = $victim -> execute($victim);
+
+		$this -> assertEquals(95, $health);
 	}
 }
 

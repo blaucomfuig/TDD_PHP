@@ -21,4 +21,13 @@ class RandomItem {
     }
 }
 
+class Person {
+
+    public $health = 100;
+    public function execute (Person $victim){
+        $this -> health -= 5;
+        return $this -> health;
+    }
+}
+
 ?>
